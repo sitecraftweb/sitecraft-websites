@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiteCraft Web Design | Professional Local Websites</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --accent: #3b82f6;
+            --text: #334155;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--text);
+            background-color: #ffffff;
+        }
+
+        nav {
+            background: white;
+            padding: 1.5rem 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .hero {
+            padding: 100px 10% 60px;
+            background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%);
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: var(--dark);
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text);
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+
+        .cta-button {
+            background: var(--primary);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+
+        .cta-button:hover {
+            background: var(--dark);
+        }
+
+        .section {
+            padding: 80px 10%;
+        }
+
+        .about-text {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 1.15rem;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+            border: 1px solid #eee;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .price {
+            color: var(--primary);
+            font-weight: bold;
+            font-size: 1.1rem;
+            display: block;
+            margin: 8px 0;
+            background: #eff6ff;
+            padding: 5px 10px;
+            border-radius: 4px;
+            width: fit-content;
+        }
+
+        .menu-list {
+            list-style: none;
+            margin-top: 15px;
+            font-size: 0.95rem;
+            border-top: 1px solid #eee;
+            padding-top: 10px;
+        }
+
+        .menu-list li {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+
+        .why-us {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+        }
+
+        .contact {
+            text-align: center;
+            background: var(--light);
+        }
+
+        .email-link {
+            font-size: 1.5rem;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            padding: 2rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .section { padding: 60px 5%; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">SiteCraft Web Design</div>
+        <a href="mailto:john_paul1219@icloud.com" class="cta-button">Hire Me</a>
+    </nav>
+
+    <header class="hero">
+        <h1>Modern Websites for Local Businesses</h1>
+        <p>Fast, mobile-friendly, and affordable web services designed to help you dominate your local market.</p>
+        <a href="#contact" class="cta-button">Request a Quote</a>
+    </header>
+
+    <section class="section">
+        <div class="about-text">
+            <p>I build professional websites for small businesses to help them attract more customers and look more professional online. By creating a custom digital presence, I ensure your business reaches a wider audience and stands out from the competition. My goal is to give you a high-quality tool that grows your outreach and turns visitors into loyal clients.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 style="text-align: center; margin-bottom: 1rem;">Project Showcases</h2>
+        <div class="portfolio-grid">
+            
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&q=80" alt="Iron Fit Gym">
+                <div class="card-content">
+                    <h3>Iron Fit Gym</h3>
+                    <span class="price">Starting at $35 / month</span>
+                    <p>A fitness-focused landing page designed for high conversion and membership retention.</p>
+                    <ul class="menu-list">
+                        <li><span>Standard Membership</span> <span>$35/mo</span></li>
+                        <li><span>Premium (All Access)</span> <span>$55/mo</span></li>
+                        <li><span>Personal Training</span> <span>$75/hr</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=600&q=80" alt="Downtown Grill">
+                <div class="card-content">
+                    <h3>Downtown Grill</h3>
+                    <span class="price">High-End Dining Template</span>
+                    <p>Inspired by the Dallas fine-dining scene with integrated digital menus.</p>
+                    <ul class="menu-list">
+                        <li><span>8oz Center Cut Filet</span> <span>$68.00</span></li>
+                        <li><span>King Crab Mafaldine</span> <span>$52.00</span></li>
+                        <li><span>Wood Fired Meatballs</span> <span>$24.00</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=600&q=80" alt="The Barber Shop">
+                <div class="card-content">
+                    <h3>The Barber Shop</h3>
+                    <span class="price">Service & Booking Layout</span>
+                    <p>A clean, masculine design featuring real Dallas-based grooming prices.</p>
+                    <ul class="menu-list">
+                        <li><span>5-Senses Haircut</span> <span>$75.00</span></li>
+                        <li><span>Straight Razor Shave</span> <span>$60.00</span></li>
+                        <li><span>Professional Beard Trim</span> <span>$40.00</span></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section why-us">
+        <div class="about-text">
+            <h2>Why Your Business Needs a Website</h2>
+            <p>Most customers search online before visiting a business, and a professional website helps your business look trustworthy. Having a site ensures you bring in more customers by being visible exactly when they are looking for your services. It acts as your 24/7 digital storefront, building credibility and expanding your reach far beyond word-of-mouth.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <h2>Contact Me</h2>
+        <p style="margin-bottom: 1.5rem;">If you want a professional website for your business, send me an email and I will build one for you.</p>
+        <a href="mailto:john_paul1219@icloud.com" class="email-link">john_paul1219@icloud.com</a>
+    </section>
+
+    <footer>
+        &copy; 2024 SiteCraft Web Design. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
